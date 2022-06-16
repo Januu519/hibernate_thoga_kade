@@ -164,6 +164,13 @@ public class Main {
         session.save(orderDetail6);
 
 
+/** ===Read OrderDetail====  */
+
+
+        OrderDetail orderDetail = session.get(OrderDetail.class, "OD-005");
+
+        System.out.println(orderDetail);
+
 
 
         transaction.commit();
