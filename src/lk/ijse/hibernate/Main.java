@@ -71,6 +71,12 @@ public class Main {
         System.out.println(c001);
         System.out.println(c002);
 
+        /** ===Update Customer====  */
+
+
+        customer1.setCustomer_address("candy");
+        session.update(customer1);
+
 
 
         transaction.commit();
