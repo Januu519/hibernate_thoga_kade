@@ -82,6 +82,18 @@ public class Main {
 
         session.delete(session.get(Customer.class,"C003"));
 
+        //---------------------------------Item----------------------------------------------------------------------------------
+
+
+/** ===Create Item====  */
+
+
+
+
+        session.save(item1);
+        session.save(item2);
+        session.save(item3);
+
 
 
         transaction.commit();
