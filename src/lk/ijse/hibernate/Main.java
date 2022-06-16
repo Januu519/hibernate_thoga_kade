@@ -34,6 +34,13 @@ public class Main {
         OrderDetail orderDetail5 = new OrderDetail("OD-005", order2, item1, 7, item1.getItem_unitPrice());
         OrderDetail orderDetail6 = new OrderDetail("OD-006", order2, item2, 3, item2.getItem_unitPrice());
 
+        item1.getOrderDetailsList().add(orderDetail1);
+        item1.getOrderDetailsList().add(orderDetail2);
+        item1.getOrderDetailsList().add(orderDetail5);
+        item2.getOrderDetailsList().add(orderDetail3);
+        item2.getOrderDetailsList().add(orderDetail4);
+        item2.getOrderDetailsList().add(orderDetail6);
+
         Session session = FactoryConfiguration.getInstance().getSession();
 
         Transaction transaction = session.beginTransaction();
