@@ -17,6 +17,11 @@ public class Main {
         Item item2 = new Item("I002", "coca-cola", 195, 250);
         Item item3 = new Item("I003", "soda", 180, 600);
 
+        Orders order1 = new Orders("OR-001",customer1);
+        Orders order2 = new Orders("OR-002",customer1);
+        Orders order3 = new Orders("OR-003",customer2);
+        Orders order4 = new Orders("OR-004",customer2);
+
         Session session = FactoryConfiguration.getInstance().getSession();
 
         Transaction transaction = session.beginTransaction();
