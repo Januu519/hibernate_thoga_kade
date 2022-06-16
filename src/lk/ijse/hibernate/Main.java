@@ -177,6 +177,12 @@ public class Main {
         orderDetail1.setOderDetail_qtyOnHand(3);
         session.update(orderDetail1);
 
+        /** ===Delete OrderDetail====  */
+
+
+        session.delete(session.get(OrderDetail.class,"OD-005"));
+
+
 
 
 
