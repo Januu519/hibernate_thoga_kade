@@ -62,6 +62,16 @@ public class Main {
         session.save(customer2);
         session.save(customer3);
 
+        /** ===Read Customer====  */
+
+
+        Customer c001 = session.get(Customer.class, "C001");
+        Customer c002 = session.get(Customer.class, "C002");
+
+        System.out.println(c001);
+        System.out.println(c002);
+
+
 
         transaction.commit();
 
