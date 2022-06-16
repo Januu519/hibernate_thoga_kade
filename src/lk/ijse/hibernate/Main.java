@@ -77,6 +77,11 @@ public class Main {
         customer1.setCustomer_address("candy");
         session.update(customer1);
 
+        /** ===Delete Customer====  */
+
+
+        session.delete(session.get(Customer.class,"C003"));
+
 
 
         transaction.commit();
