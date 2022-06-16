@@ -137,6 +137,11 @@ public class Main {
 
         System.out.println(orders);
 
+        /** ===Update Order====  */
+
+
+        order1.setOrder_customer(customer2);
+        session.update(order1);
 
 
 
