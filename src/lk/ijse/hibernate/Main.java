@@ -41,6 +41,14 @@ public class Main {
         item2.getOrderDetailsList().add(orderDetail4);
         item2.getOrderDetailsList().add(orderDetail6);
 
+        order1.getOrderDetailsList().add(orderDetail1);
+        order1.getOrderDetailsList().add(orderDetail2);
+        order1.getOrderDetailsList().add(orderDetail3);
+        order2.getOrderDetailsList().add(orderDetail4);
+        order2.getOrderDetailsList().add(orderDetail5);
+        order2.getOrderDetailsList().add(orderDetail6);
+
+
         Session session = FactoryConfiguration.getInstance().getSession();
 
         Transaction transaction = session.beginTransaction();
