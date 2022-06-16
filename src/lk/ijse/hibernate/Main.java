@@ -103,6 +103,13 @@ public class Main {
         System.out.println(i001);
         System.out.println(i002);
 
+        /** ===Update Item====  */
+
+
+        item3.setItem_qty(170);
+
+        session.update(item3);
+
 
 
 
