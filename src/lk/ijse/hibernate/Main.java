@@ -22,6 +22,11 @@ public class Main {
         Orders order3 = new Orders("OR-003",customer2);
         Orders order4 = new Orders("OR-004",customer2);
 
+        customer1.getOrderList().add(order1);
+        customer1.getOrderList().add(order2);
+        customer2.getOrderList().add(order3);
+        customer2.getOrderList().add(order4);
+
         Session session = FactoryConfiguration.getInstance().getSession();
 
         Transaction transaction = session.beginTransaction();
