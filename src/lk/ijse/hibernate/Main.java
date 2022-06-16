@@ -94,6 +94,16 @@ public class Main {
         session.save(item2);
         session.save(item3);
 
+        /** ===Read Item====  */
+
+
+        Item i001 = session.get(Item.class, "I001");
+        Item i002 = session.get(Item.class, "I002");
+
+        System.out.println(i001);
+        System.out.println(i002);
+
+
 
 
         transaction.commit();
