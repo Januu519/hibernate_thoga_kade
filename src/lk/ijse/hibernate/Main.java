@@ -129,6 +129,15 @@ public class Main {
         session.save(order4);
 
 
+/** ===Read Order====  */
+
+
+
+        Orders orders = session.get(Orders.class, "OR-001");
+
+        System.out.println(orders);
+
+
 
 
         transaction.commit();
