@@ -171,6 +171,14 @@ public class Main {
 
         System.out.println(orderDetail);
 
+        /** ===Update OrderDetail====  */
+
+
+        orderDetail1.setOderDetail_qtyOnHand(3);
+        session.update(orderDetail1);
+
+
+
 
 
         transaction.commit();
