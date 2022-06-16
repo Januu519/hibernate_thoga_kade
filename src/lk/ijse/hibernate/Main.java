@@ -148,6 +148,22 @@ public class Main {
 
         session.delete(session.get(Orders.class,"OR-003"));
 
+        //---------------------------------OrderDetail----------------------------------------------------------------------------------
+
+
+/** ===Create OrderDetail====  */
+
+
+
+
+        session.save(orderDetail1);
+        session.save(orderDetail2);
+        session.save(orderDetail3);
+        session.save(orderDetail4);
+        session.save(orderDetail5);
+        session.save(orderDetail6);
+
+
 
 
         transaction.commit();
