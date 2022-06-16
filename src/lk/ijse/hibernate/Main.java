@@ -111,6 +111,13 @@ public class Main {
         session.update(item3);
 
 
+/** ===Delete Item====  */
+
+
+        session.delete(session.get(Item.class,"I003"));
+
+
+
 
 
         transaction.commit();
