@@ -143,6 +143,11 @@ public class Main {
         order1.setOrder_customer(customer2);
         session.update(order1);
 
+        /** ===Delete Order====  */
+
+
+        session.delete(session.get(Orders.class,"OR-003"));
+
 
 
         transaction.commit();
