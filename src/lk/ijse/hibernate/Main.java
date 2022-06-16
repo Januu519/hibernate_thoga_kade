@@ -53,7 +53,14 @@ public class Main {
 
         Transaction transaction = session.beginTransaction();
 
+/** ===Create Customer====  */
 
+
+
+
+        session.save(customer1);
+        session.save(customer2);
+        session.save(customer3);
 
 
         transaction.commit();
