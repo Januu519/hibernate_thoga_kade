@@ -27,6 +27,13 @@ public class Main {
         customer2.getOrderList().add(order3);
         customer2.getOrderList().add(order4);
 
+        OrderDetail orderDetail1 = new OrderDetail("OD-001", order1, item1, 15, item1.getItem_unitPrice());
+        OrderDetail orderDetail2 = new OrderDetail("OD-002", order1, item1, 2, item1.getItem_unitPrice());
+        OrderDetail orderDetail3 = new OrderDetail("OD-003", order1, item2, 17, item2.getItem_unitPrice());
+        OrderDetail orderDetail4 = new OrderDetail("OD-004", order2, item2, 5, item2.getItem_unitPrice());
+        OrderDetail orderDetail5 = new OrderDetail("OD-005", order2, item1, 7, item1.getItem_unitPrice());
+        OrderDetail orderDetail6 = new OrderDetail("OD-006", order2, item2, 3, item2.getItem_unitPrice());
+
         Session session = FactoryConfiguration.getInstance().getSession();
 
         Transaction transaction = session.beginTransaction();
