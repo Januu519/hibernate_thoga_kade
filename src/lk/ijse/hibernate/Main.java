@@ -116,6 +116,17 @@ public class Main {
 
         session.delete(session.get(Item.class,"I003"));
 
+//---------------------------------Order----------------------------------------------------------------------------------
+
+
+/** ===Create Order====  */
+
+
+
+        session.save(order1);
+        session.save(order2);
+        session.save(order3);
+        session.save(order4);
 
 
 
