@@ -9,7 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        Customer customer1 = new Customer("C001", "Janu", "Panadura", "074 1239945");
+        Customer customer2 = new Customer("C002", "Thenu", "colombo", "075 2746328");
+        Customer customer3 = new Customer("C003", "Sanju", " kaluthara", "072 6587463");
 
         Session session = FactoryConfiguration.getInstance().getSession();
 
